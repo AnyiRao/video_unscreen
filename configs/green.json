@@ -1,0 +1,44 @@
+{
+    "cuda_device": 0,
+    "colorfiltering_update_duration": 30,
+    "colorfiltering_train_iters": 3,
+    "fg_exist_thr": 0.001,
+    "binseg": {
+        "model_path": "./weights/deeplab50_weights_v5.pth",
+        "input_long_side": 962,
+        "stride_ratio": 0.5,
+        "flip": true
+    },
+    "stm": {
+        "model_path": "./weights/stm_weights.pth",
+        "input_long_side": 960,
+        "memory_step": 2,
+        "memory_capacity": 10
+    },
+    "colorfiltering": {
+        "input_long_side": 960,
+        "bg_ncomp": [3, 5, 5],
+        "fg_ncomp": [10, 10, 10],
+        "max_num_samples": 10000,
+        "color_prior_winsize": 30,
+        "use_opencv_gmm": false
+    },
+    "objectremoval": {
+        "score_map_center": {
+            "landscape": [0.5, 0.5],
+            "portrait": [0.6, 0.5]
+        },
+        "saliency_thr": 0.005,
+        "consensus_thr": 0.5
+    },
+    "trimap": {
+        "input_long_side": 960,
+        "kernelsize": 3,
+        "iters": 5,
+        "color_winsize": [10, 100, 180]
+    },
+    "vmatting": {
+        "model_path": "./weights/unet18_vid.pth",
+        "input_long_side": 960
+    }
+}
