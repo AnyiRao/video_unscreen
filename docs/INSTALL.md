@@ -42,7 +42,3 @@ pip install -r docs/requirements.txt
 ### Download Pretrained Models and Data
 Download model weights and data [here](https://drive.google.com/drive/folders/1IYcUaimgllu_PyE6jBHDgn8FfD4stdkW?usp=sharing)
 and put them in the `data` and `weights` folder.
-
-### Prepare Datasets for Scene318
-
-#### Explanation
